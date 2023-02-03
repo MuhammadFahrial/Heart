@@ -12,6 +12,7 @@
         }
 
         .love {
+            display: none;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -46,22 +47,32 @@
             }
 
         }
+
+        .neonText {
+            color: rgb(212, 8, 8);
+            text-shadow:
+                0 0 7px rgb(212, 8, 8),
+                0 0 10px rgb(212, 8, 8),
+                0 0 21px rgb(212, 8, 8),
+                0 0 32px rgb(137, 14, 14),
+                0 0 72px rgb(192, 12, 12),
+                0 0 2px rgb(137, 14, 14),
+                0 0 62px rgb(137, 14, 14),
+                0 0 90px rgb(137, 14, 14);
+        }
     </style>
 </head>
 
 <body>
     <div class="love">
-        <h1>♥️</h1>
+        <h1 class="heart neonText">♥️</h1>
         <audio hidden autoplay loop>
             <source src="love.mp3" type="audio/mpeg">
+            Browsermu tidak mendukung tag audio
         </audio>
     </div>
-
-
     <script>
-        alert('3')
-        alert('2')
-        alert('1')
+        alert('Just Calm')
     </script>
 </body>
 
