@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        .love {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            /* background-color: aqua; */
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        h1 {
+            /* font-size: 400px; */
+            animation-name: heart;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            /* animation-timing-function: ease; */
+            color: rgb(213, 1, 1);
+            text-shadow: 20px, 20px, 5, blue;
+            /* border: 2px solid red; */
+        }
+
+        @keyframes heart {
+            from {
+                font-size: 160px;
+            }
+
+            to {
+                font-size: 190px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="love">
+        <h1>♥️</h1>
+        <audio hidden autoplay loop>
+            <source src="love.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+    <script>
+        alert('3')
+        alert('2')
+        alert('1')
+    </script>
+</body>
+
+</html>
